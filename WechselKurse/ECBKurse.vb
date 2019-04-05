@@ -90,7 +90,7 @@ Public Class ECBExchanges
             ' Falls Region Info gleich der übergebenen Kennung ist wird der Name 
             ' zurückgegeben
             If ri.ISOCurrencySymbol = isoCode Then
-                Return ci.DisplayName
+                Return ri.DisplayName
             End If
         Next
 

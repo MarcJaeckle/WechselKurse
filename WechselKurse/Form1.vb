@@ -114,7 +114,7 @@
                 For i As Integer = 0 To ECBList.Count - 1
                     If ECBList(i).DisplayName.Length > 0 Then
                         ' Ländername bestimmen
-                        str = ECBList(i).DisplayName.Substring(ECBList(i).DisplayName.IndexOf("(") + 1, ECBList(i).DisplayName.Length - (ECBList(i).DisplayName.IndexOf("(") + 2))
+                        str = ECBList(i).DisplayName '.Substring(ECBList(i).DisplayName.IndexOf("(") + 1, ECBList(i).DisplayName.Length - (ECBList(i).DisplayName.IndexOf("(") + 2))
                     Else
                         ' Für nicht vom System erkannte Länder manuell Ländername ergänzen
                         Select Case ECBList(i).ECBCurrency.ToUpper.Trim
